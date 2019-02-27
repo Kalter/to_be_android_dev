@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvDayForecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-7dp"
+        android:indeterminate="true"
+        android:max="100"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnLoadWithAsyncTask"
+            android:layout_width="match_parent"
+            android:text="@string/load_with_async_task"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnLoadWithRetrofitCallback"
+            android:layout_width="match_parent"
+            android:text="@string/load_with_retrofit_callback"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</FrameLayout>

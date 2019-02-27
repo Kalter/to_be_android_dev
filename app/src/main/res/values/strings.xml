@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">#TO_BE_ANDROID…DEV</string>
+
+    <!-- Lesson 1 -->
+    <string name="plus_one">+1</string>
+    <string name="minus_one">-1</string>
+
+    <!-- Lesson 3 -->
+    <string name="load_with_async_task">Load with Async Task</string>
+    <string name="load_with_retrofit_callback">Load with Retrofit Callback</string>
+
+    <!-- MainActivity -->
+    <string name="lesson_1_counter">Lesson_1. Counter</string>
+    <string name="lesson_2_color_chooser">Lesson_2. Color Chooser</string>
+    <string name="lesson_2_recyclerview">Lesson_2. RecyclerView</string>
+    <string name="lesson_3_day_forecast">Lesson_3. Day Forecast</string>
+
+</resources>
