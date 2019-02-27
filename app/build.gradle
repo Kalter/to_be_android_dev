@@ -13,7 +13,7 @@ android {
         vectorDrawables.useSupportLibrary = true
 
         buildConfigField "String", "API_BASE_URL", '"https://api.openweathermap.org/"'
-        buildConfigField "String", "WEATHER_API_KEY", '"daa7ed2026a6bcc40dd598dc77d528c0"'
+        buildConfigField "String", "WEATHER_API_KEY", readWeatherApiKey()
     }
 
     compileOptions {
@@ -56,4 +56,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+private String readWeatherApiKey() {
+    def keysPropertiesFile = rootProject.file("keys.properties")
+    def keysProperties = new Properties()
+    try {
+        keysProperties.load(new FileInputStream(keysPropertiesFile))
+        def weatherApiKey = keysProperties['weather_api_key']
+        return weatherApiKey == null ? '""' : weatherApiKey
+    } catch (ignored) {
+        return '""'
+    }
 }

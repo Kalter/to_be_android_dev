@@ -101,8 +101,10 @@ public class DayForecastActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(DayForecastResponse fullWeatherInfo) {
-            dayInfoView.setText(fullWeatherInfo.getDayForecastInfo().toString());
+        protected void onPostExecute(@Nullable DayForecastResponse fullWeatherInfo) {
+            if (fullWeatherInfo != null) {
+                dayInfoView.setText(fullWeatherInfo.getDayForecastInfo().toString());
+            }
             hideProgressBar();
         }
     }
