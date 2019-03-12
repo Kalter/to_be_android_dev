@@ -7,6 +7,7 @@ import com.akvelon.myfirstapp.lesson1.CounterActivity;
 import com.akvelon.myfirstapp.lesson2.intents.ColorChooserActivity;
 import com.akvelon.myfirstapp.lesson2.recyclerview.RecyclerViewActivity;
 import com.akvelon.myfirstapp.lesson3.ui.DayForecastActivity;
+import com.akvelon.myfirstapp.lesson4.rxweather.ui.RxDayForecastActivity;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,5 +41,10 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btnLessonThreeDayForecast)
     void openLessonThreeDayForecastScreen() {
         DayForecastActivity.start(this);
+    }
+
+    @OnClick(R.id.btnLessonForthDayForecast)
+    void openLessonForthRxDayForecastScreen() {
+        RxDayForecastActivity.start(this);
     }
 }

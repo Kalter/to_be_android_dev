@@ -9,10 +9,14 @@
     <string name="load_with_async_task">Load with Async Task</string>
     <string name="load_with_retrofit_callback">Load with Retrofit Callback</string>
 
+    <!-- Lesson 4 -->
+    <string name="load_with_rxjava">Load with RxJava</string>
+
     <!-- MainActivity -->
     <string name="lesson_1_counter">Lesson_1. Counter</string>
     <string name="lesson_2_color_chooser">Lesson_2. Color Chooser</string>
     <string name="lesson_2_recyclerview">Lesson_2. RecyclerView</string>
     <string name="lesson_3_day_forecast">Lesson_3. Day Forecast</string>
+    <string name="lesson_4_rx_day_forecast">Lesson_4. Rx Day Forecast</string>
 
 </resources>

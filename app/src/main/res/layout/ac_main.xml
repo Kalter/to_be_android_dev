@@ -37,4 +37,14 @@
         android:layout_height="wrap_content"
         android:text="@string/lesson_3_day_forecast" />
 
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="16dp" />
+
+    <Button
+        android:id="@+id/btnLessonForthDayForecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lesson_4_rx_day_forecast" />
+
 </LinearLayout>

@@ -26,7 +26,10 @@
         <activity android:name=".lesson2.intents.ColorDetailsInfoActivity" />
         <activity android:name=".lesson2.recyclerview.RecyclerViewActivity" />
 
-        <activity android:name=".lesson3.ui.DayForecastActivity"/>
+        <activity android:name=".lesson3.ui.DayForecastActivity" />
+
+        <activity android:name=".lesson4.rxweather.ui.RxDayForecastActivity" />
+
     </application>
 
 </manifest>
