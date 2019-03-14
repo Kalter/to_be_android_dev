@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
@@ -43,17 +44,24 @@ public class RxDayForecastActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.btnLoadWithRxJava)
-    void loadDayForecastWitRx() {
+    void loadWeatherWithRetrofitCallback() {
         compositeDisposable.add(RepositoryProvider.get()
                 .provideNewsFeedRepository()
                 .getDayForecast("Kazan")
+                .flatMap(dayForecastResponse ->
+                        Single.just(dayForecastResponse.getDayForecastInfo().getDayTempInfo()))
+                .map(this::fromKelvinToCelsius)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(response -> dayInfoView.setText(response.getDayForecastInfo().toString()),
-                        throwable -> {
-                            // Handle errors
-                        })
+                .doOnSubscribe(subscription -> showProgressBar())
+                .doFinally(this::hideProgressBar)
+                .subscribe(temp -> dayInfoView.setText(temp.toString()),
+                        throwable -> {})
         );
+    }
+
+    private float fromKelvinToCelsius(final float temperature) {
+        return temperature - 273.15f;
     }
 
     @Override

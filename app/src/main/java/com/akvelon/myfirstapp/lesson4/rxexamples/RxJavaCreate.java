@@ -10,10 +10,6 @@ import io.reactivex.schedulers.Schedulers;
 
 public class RxJavaCreate {
 
-    public static void main(String[] args) {
-        from().subscribe(u -> System.out.println(u));
-    }
-
     @NonNull
     public static Flowable<Integer> from() {
         List<Integer> values = new ArrayList<>();
