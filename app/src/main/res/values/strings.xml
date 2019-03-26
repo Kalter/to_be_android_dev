@@ -12,11 +12,17 @@
     <!-- Lesson 4 -->
     <string name="load_with_rxjava">Load with RxJava</string>
 
+    <!-- Lesson 5 -->
+    <string name="i_m_static_fragment">I\'m static fragment</string>
+
     <!-- MainActivity -->
     <string name="lesson_1_counter">Lesson_1. Counter</string>
     <string name="lesson_2_color_chooser">Lesson_2. Color Chooser</string>
     <string name="lesson_2_recyclerview">Lesson_2. RecyclerView</string>
     <string name="lesson_3_day_forecast">Lesson_3. Day Forecast</string>
     <string name="lesson_4_rx_day_forecast">Lesson_4. Rx Day Forecast</string>
+    <string name="lesson_5_static_fragments">Lesson_5. Static Fragments</string>
+    <string name="red">Red</string>
+    <string name="blue">Blue</string>
 
 </resources>

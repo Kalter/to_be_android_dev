@@ -10,4 +10,9 @@
     <color name="black">#000000</color>
     <color name="white">#ffffff</color>
     <color name="pink_D81B60">#D81B60</color>
+    <color name="pink_880E4F">#880E4F</color>
+    <color name="purple_4A148C">#4A148C</color>
+    <color name="blue_1E88E5">#1E88E5</color>
+    <color name="red_E53935">#E53935</color>
+
 </resources>
