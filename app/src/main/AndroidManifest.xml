@@ -30,7 +30,7 @@
 
         <activity android:name=".lesson4.rxweather.ui.RxDayForecastActivity" />
 
-        <activity android:name=".lesson5.fragments.StaticFragmentsHostActivity" />
+        <activity android:name=".lesson5.fragments.static_fragments.StaticFragmentsHostActivity" />
 
     </application>
 

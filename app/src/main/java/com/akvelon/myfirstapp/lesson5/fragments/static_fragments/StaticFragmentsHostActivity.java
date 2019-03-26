@@ -1,4 +1,4 @@
-package com.akvelon.myfirstapp.lesson5.fragments;
+package com.akvelon.myfirstapp.lesson5.fragments.static_fragments;
 
 import android.content.Context;
 import android.content.Intent;

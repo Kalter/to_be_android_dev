@@ -8,7 +8,7 @@ import com.akvelon.myfirstapp.lesson2.intents.ColorChooserActivity;
 import com.akvelon.myfirstapp.lesson2.recyclerview.RecyclerViewActivity;
 import com.akvelon.myfirstapp.lesson3.ui.DayForecastActivity;
 import com.akvelon.myfirstapp.lesson4.rxweather.ui.RxDayForecastActivity;
-import com.akvelon.myfirstapp.lesson5.fragments.StaticFragmentsHostActivity;
+import com.akvelon.myfirstapp.lesson5.fragments.static_fragments.StaticFragmentsHostActivity;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
