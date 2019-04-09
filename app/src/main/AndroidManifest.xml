@@ -34,6 +34,7 @@
         <activity android:name=".lesson5.fragments.dynamic_fragments.DynamicFragmentsHostActivity" />
 
         <activity android:name=".lesson6.sqlite.SqliteActivity" />
+        <activity android:name=".lesson6.room.RoomActivity" />
 
     </application>
 

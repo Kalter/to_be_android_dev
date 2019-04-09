@@ -1,4 +1,4 @@
-package com.akvelon.myfirstapp.lesson6;
+package com.akvelon.myfirstapp.lesson6.sqlite;
 
 import android.view.View;
 import android.widget.TextView;

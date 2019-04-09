@@ -14,8 +14,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.akvelon.myfirstapp.R;
-import com.akvelon.myfirstapp.lesson6.DatabaseItemsAdapter;
-import com.akvelon.myfirstapp.lesson6.UserInfo;
 import com.akvelon.myfirstapp.lesson6.sqlite.UsersInfoContract.UserEntry;
 
 import java.util.ArrayList;

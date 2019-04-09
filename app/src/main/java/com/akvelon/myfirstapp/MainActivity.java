@@ -10,6 +10,7 @@ import com.akvelon.myfirstapp.lesson3.ui.DayForecastActivity;
 import com.akvelon.myfirstapp.lesson4.rxweather.ui.RxDayForecastActivity;
 import com.akvelon.myfirstapp.lesson5.fragments.dynamic_fragments.DynamicFragmentsHostActivity;
 import com.akvelon.myfirstapp.lesson5.fragments.static_fragments.StaticFragmentsHostActivity;
+import com.akvelon.myfirstapp.lesson6.room.RoomActivity;
 import com.akvelon.myfirstapp.lesson6.sqlite.SqliteActivity;
 
 import androidx.annotation.Nullable;
@@ -64,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btnLessonSixthSqlite)
     void openLessonSixthSqliteScreen() {
         SqliteActivity.start(this);
+    }
+
+    @OnClick(R.id.btnLessonSixthRoom)
+    void openLessonSixthRoomScreen() {
+        RoomActivity.start(this);
     }
 
 }

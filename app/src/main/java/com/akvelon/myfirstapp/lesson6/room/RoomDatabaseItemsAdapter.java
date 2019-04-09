@@ -1,4 +1,4 @@
-package com.akvelon.myfirstapp.lesson6;
+package com.akvelon.myfirstapp.lesson6.room;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,20 +12,20 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class DatabaseItemsAdapter extends RecyclerView.Adapter<DatabaseItemsHolder> {
+public class RoomDatabaseItemsAdapter extends RecyclerView.Adapter<RoomDatabaseItemsHolder> {
 
-    private List<UserInfo> usersInfo = new ArrayList<>();
+    private List<RoomUserInfo> usersInfo = new ArrayList<>();
 
     @NonNull
     @Override
-    public DatabaseItemsHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RoomDatabaseItemsHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         final View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_db_row, parent, false);
-        return new DatabaseItemsHolder(v);
+        return new RoomDatabaseItemsHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DatabaseItemsHolder holder, int position) {
+    public void onBindViewHolder(@NonNull RoomDatabaseItemsHolder holder, int position) {
         holder.setData(usersInfo.get(position));
     }
 
@@ -34,7 +34,7 @@ public class DatabaseItemsAdapter extends RecyclerView.Adapter<DatabaseItemsHold
         return usersInfo.size();
     }
 
-    public void setData(@NonNull List<UserInfo> usersInfo) {
+    public void setData(@NonNull List<RoomUserInfo> usersInfo) {
         this.usersInfo = usersInfo;
         notifyDataSetChanged();
     }

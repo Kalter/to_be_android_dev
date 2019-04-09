@@ -73,4 +73,10 @@
         android:layout_height="wrap_content"
         android:text="@string/lesson_6_sqlite" />
 
+    <Button
+        android:id="@+id/btnLessonSixthRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lesson_6_room" />
+
 </LinearLayout>

@@ -40,6 +40,6 @@
     <string name="lesson_5_static_fragments">Lesson_5. Static Fragments</string>
     <string name="lesson_5_dynamic_fragments">Lesson_5. Dynamic Fragments</string>
     <string name="lesson_6_sqlite">Lesson_6. SQLite</string>
-    <string name="separator">|</string>
+    <string name="lesson_6_room">Lesson_6. Room</string>
 
 </resources>
