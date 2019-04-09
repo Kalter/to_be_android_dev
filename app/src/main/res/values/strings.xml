@@ -24,6 +24,13 @@
     <string name="remove_fragment">Remove fragment</string>
     <string name="add_to_back_stack">Add to back stack</string>
 
+    <!-- Lesson 6 -->
+    <string name="name">Name</string>
+    <string name="age">Age</string>
+    <string name="add_user_to_db">Add user to DB</string>
+    <string name="read_db">Read DB</string>
+    <string name="read_db_with_filter">Read database with filter</string>
+
     <!-- MainActivity -->
     <string name="lesson_1_counter">Lesson_1. Counter</string>
     <string name="lesson_2_color_chooser">Lesson_2. Color Chooser</string>
@@ -32,5 +39,7 @@
     <string name="lesson_4_rx_day_forecast">Lesson_4. Rx Day Forecast</string>
     <string name="lesson_5_static_fragments">Lesson_5. Static Fragments</string>
     <string name="lesson_5_dynamic_fragments">Lesson_5. Dynamic Fragments</string>
+    <string name="lesson_6_sqlite">Lesson_6. SQLite</string>
+    <string name="separator">|</string>
 
 </resources>

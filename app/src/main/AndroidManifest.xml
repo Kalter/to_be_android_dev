@@ -33,6 +33,8 @@
         <activity android:name=".lesson5.fragments.static_fragments.StaticFragmentsHostActivity" />
         <activity android:name=".lesson5.fragments.dynamic_fragments.DynamicFragmentsHostActivity" />
 
+        <activity android:name=".lesson6.sqlite.SqliteActivity" />
+
     </application>
 
 </manifest>

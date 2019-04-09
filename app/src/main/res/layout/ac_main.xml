@@ -63,4 +63,14 @@
         android:layout_height="wrap_content"
         android:text="@string/lesson_5_dynamic_fragments" />
 
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="16dp" />
+
+    <Button
+        android:id="@+id/btnLessonSixthSqlite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lesson_6_sqlite" />
+
 </LinearLayout>
