@@ -31,6 +31,10 @@
     <string name="read_db">Read DB</string>
     <string name="read_db_with_filter">Read database with filter</string>
 
+    <!-- Lesson 7 -->
+    <string name="refresh">Refresh</string>
+    <string name="temp_celsius_pattern">%.2f °C</string>
+
     <!-- MainActivity -->
     <string name="lesson_1_counter">Lesson_1. Counter</string>
     <string name="lesson_2_color_chooser">Lesson_2. Color Chooser</string>
@@ -41,5 +45,6 @@
     <string name="lesson_5_dynamic_fragments">Lesson_5. Dynamic Fragments</string>
     <string name="lesson_6_sqlite">Lesson_6. SQLite</string>
     <string name="lesson_6_room">Lesson_6. Room</string>
+    <string name="lesson_7_mvp_forecast">Lesson_7. MVP Forecast</string>
 
 </resources>

@@ -36,6 +36,8 @@
         <activity android:name=".lesson6.sqlite.SqliteActivity" />
         <activity android:name=".lesson6.room.RoomActivity" />
 
+        <activity android:name=".lesson7.ui.screens.DayForecastMvpActivity" />
+
     </application>
 
 </manifest>

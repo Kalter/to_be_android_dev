@@ -3,6 +3,9 @@ package com.akvelon.myfirstapp;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.akvelon.myfirstapp.lesson1.CounterActivity;
 import com.akvelon.myfirstapp.lesson2.intents.ColorChooserActivity;
 import com.akvelon.myfirstapp.lesson2.recyclerview.RecyclerViewActivity;
@@ -10,11 +13,9 @@ import com.akvelon.myfirstapp.lesson3.ui.DayForecastActivity;
 import com.akvelon.myfirstapp.lesson4.rxweather.ui.RxDayForecastActivity;
 import com.akvelon.myfirstapp.lesson5.fragments.dynamic_fragments.DynamicFragmentsHostActivity;
 import com.akvelon.myfirstapp.lesson5.fragments.static_fragments.StaticFragmentsHostActivity;
-import com.akvelon.myfirstapp.lesson6.room.RoomActivity;
 import com.akvelon.myfirstapp.lesson6.sqlite.SqliteActivity;
+import com.akvelon.myfirstapp.lesson7.ui.screens.DayForecastMvpActivity;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -67,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
         SqliteActivity.start(this);
     }
 
-    @OnClick(R.id.btnLessonSixthRoom)
-    void openLessonSixthRoomScreen() {
-        RoomActivity.start(this);
+    @OnClick(R.id.btnLessonSeventhRoom)
+    void openLessonSeventhMVPForecastScreen() {
+        DayForecastMvpActivity.start(this);
     }
 
 }
