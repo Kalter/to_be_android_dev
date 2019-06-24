@@ -38,6 +38,8 @@
 
         <activity android:name=".lesson7.ui.screens.DayForecastMvpActivity" />
 
+        <activity android:name=".lesson8.DataBindingUserInfoActivity" />
+
     </application>
 
 </manifest>

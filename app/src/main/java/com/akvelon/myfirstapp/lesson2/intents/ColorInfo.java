@@ -2,7 +2,7 @@ package com.akvelon.myfirstapp.lesson2.intents;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorRes;
 
 public class ColorInfo implements Parcelable {
 

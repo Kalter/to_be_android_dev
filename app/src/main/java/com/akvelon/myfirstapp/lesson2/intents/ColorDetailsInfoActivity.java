@@ -3,15 +3,15 @@ package com.akvelon.myfirstapp.lesson2.intents;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.ColorRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.widget.TextView;
 
-import com.akvelon.myfirstapp.R;
-
+import androidx.annotation.ColorRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+
+import com.akvelon.myfirstapp.R;
 
 public class ColorDetailsInfoActivity extends AppCompatActivity {
 

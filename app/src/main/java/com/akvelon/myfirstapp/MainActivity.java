@@ -15,6 +15,7 @@ import com.akvelon.myfirstapp.lesson5.fragments.dynamic_fragments.DynamicFragmen
 import com.akvelon.myfirstapp.lesson5.fragments.static_fragments.StaticFragmentsHostActivity;
 import com.akvelon.myfirstapp.lesson6.sqlite.SqliteActivity;
 import com.akvelon.myfirstapp.lesson7.ui.screens.DayForecastMvpActivity;
+import com.akvelon.myfirstapp.lesson8.DataBindingUserInfoActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -71,6 +72,11 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btnLessonSeventhRoom)
     void openLessonSeventhMVPForecastScreen() {
         DayForecastMvpActivity.start(this);
+    }
+
+    @OnClick(R.id.btnLessonEightDataBinding)
+    void openLessonEightDataBindingScreen() {
+        DataBindingUserInfoActivity.start(this);
     }
 
 }

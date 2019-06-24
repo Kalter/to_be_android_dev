@@ -46,5 +46,6 @@
     <string name="lesson_6_sqlite">Lesson_6. SQLite</string>
     <string name="lesson_6_room">Lesson_6. Room</string>
     <string name="lesson_7_mvp_forecast">Lesson_7. MVP Forecast</string>
+    <string name="lesson_8_data_binding">Lesson_8. Data Binding</string>
 
 </resources>

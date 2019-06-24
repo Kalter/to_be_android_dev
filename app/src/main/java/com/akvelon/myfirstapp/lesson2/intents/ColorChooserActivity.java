@@ -1,9 +1,9 @@
 package com.akvelon.myfirstapp.lesson2.intents;
 
 import android.os.Bundle;
-import android.support.annotation.ColorRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.ColorRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.akvelon.myfirstapp.R;
 

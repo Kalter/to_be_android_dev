@@ -1,92 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnLessonOneCounterActivity"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lesson_1_counter" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="16dp" />
+        <Button
+            android:id="@+id/btnLessonOneCounterActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_1_counter" />
 
-    <Button
-        android:id="@+id/btnLessonTwoColorChooser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_2_color_chooser" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
 
-    <Button
-        android:id="@+id/btnLessonTwoRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_2_recyclerview" />
+        <Button
+            android:id="@+id/btnLessonTwoColorChooser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_2_color_chooser" />
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="16dp" />
+        <Button
+            android:id="@+id/btnLessonTwoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_2_recyclerview" />
 
-    <Button
-        android:id="@+id/btnLessonThreeDayForecast"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_3_day_forecast" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="16dp" />
+        <Button
+            android:id="@+id/btnLessonThreeDayForecast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_3_day_forecast" />
 
-    <Button
-        android:id="@+id/btnLessonForthDayForecast"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_4_rx_day_forecast" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="16dp" />
+        <Button
+            android:id="@+id/btnLessonForthDayForecast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_4_rx_day_forecast" />
 
-    <Button
-        android:id="@+id/btnLessonFifthStaticFragments"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_5_static_fragments" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
 
-    <Button
-        android:id="@+id/btnLessonFifthDynamicFragments"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_5_dynamic_fragments" />
+        <Button
+            android:id="@+id/btnLessonFifthStaticFragments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_5_static_fragments" />
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="16dp" />
+        <Button
+            android:id="@+id/btnLessonFifthDynamicFragments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_5_dynamic_fragments" />
 
-    <Button
-        android:id="@+id/btnLessonSixthSqlite"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_6_sqlite" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
 
-    <Button
-        android:id="@+id/btnLessonSixthRoom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_6_room" />
+        <Button
+            android:id="@+id/btnLessonSixthSqlite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_6_sqlite" />
 
-    <Space
-        android:layout_width="0dp"
-        android:layout_height="16dp" />
+        <Button
+            android:id="@+id/btnLessonSixthRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_6_room" />
 
-    <Button
-        android:id="@+id/btnLessonSeventhRoom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_7_mvp_forecast" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnLessonSeventhRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_7_mvp_forecast" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
+
+        <Button
+            android:id="@+id/btnLessonEightDataBinding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_8_data_binding" />
+
+    </LinearLayout>
+</ScrollView>

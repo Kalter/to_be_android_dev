@@ -1,6 +1,6 @@
 package com.akvelon.myfirstapp.lesson4.rxweather.network;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.akvelon.myfirstapp.BuildConfig;
 

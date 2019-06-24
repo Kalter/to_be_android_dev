@@ -1,7 +1,7 @@
 package com.akvelon.myfirstapp.lesson4.rxweather.data.repository;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.akvelon.myfirstapp.lesson4.rxweather.data.repository.weather.RxWeatherRepository;
 import com.akvelon.myfirstapp.lesson4.rxweather.data.repository.weather.RxWeatherRepositoryImpl;
