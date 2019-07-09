@@ -1,7 +1,5 @@
 package com.akvelon.myfirstapp.lesson8.models;
 
-import androidx.databinding.Bindable;
-
 public class DataBindingUserInfo {
 
     private String firstName;

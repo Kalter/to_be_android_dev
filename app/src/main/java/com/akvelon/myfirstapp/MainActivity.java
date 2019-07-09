@@ -16,6 +16,7 @@ import com.akvelon.myfirstapp.lesson5.fragments.static_fragments.StaticFragments
 import com.akvelon.myfirstapp.lesson6.sqlite.SqliteActivity;
 import com.akvelon.myfirstapp.lesson7.ui.screens.DayForecastMvpActivity;
 import com.akvelon.myfirstapp.lesson8.DataBindingUserInfoActivity;
+import com.akvelon.myfirstapp.lesson9.ui.DayForecastMVVMActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         SqliteActivity.start(this);
     }
 
-    @OnClick(R.id.btnLessonSeventhRoom)
+    @OnClick(R.id.btnLessonSeventhMVPForecast)
     void openLessonSeventhMVPForecastScreen() {
         DayForecastMvpActivity.start(this);
     }
@@ -77,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btnLessonEightDataBinding)
     void openLessonEightDataBindingScreen() {
         DataBindingUserInfoActivity.start(this);
+    }
+
+    @OnClick(R.id.btnLessonNineMVVMForecast)
+    void openLessonNineMVVMForecastScreen() {
+        DayForecastMVVMActivity.start(this);
     }
 
 }

@@ -47,5 +47,6 @@
     <string name="lesson_6_room">Lesson_6. Room</string>
     <string name="lesson_7_mvp_forecast">Lesson_7. MVP Forecast</string>
     <string name="lesson_8_data_binding">Lesson_8. Data Binding</string>
+    <string name="lesson_9_mvvm_forecast">Lesson_9. MVVM Forecast</string>
 
 </resources>

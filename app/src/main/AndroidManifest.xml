@@ -40,6 +40,8 @@
 
         <activity android:name=".lesson8.DataBindingUserInfoActivity" />
 
+        <activity android:name=".lesson9.ui.DayForecastMVVMActivity" />
+
     </application>
 
 </manifest>

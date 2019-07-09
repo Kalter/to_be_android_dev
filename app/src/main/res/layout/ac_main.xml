@@ -88,7 +88,7 @@
             android:layout_height="16dp" />
 
         <Button
-            android:id="@+id/btnLessonSeventhRoom"
+            android:id="@+id/btnLessonSeventhMVPForecast"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lesson_7_mvp_forecast" />
@@ -103,5 +103,14 @@
             android:layout_height="wrap_content"
             android:text="@string/lesson_8_data_binding" />
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
+
+        <Button
+            android:id="@+id/btnLessonNineMVVMForecast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson_9_mvvm_forecast" />
     </LinearLayout>
 </ScrollView>
