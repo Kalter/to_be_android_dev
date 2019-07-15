@@ -14,14 +14,10 @@ class DayForecastMVVMViewModel : ViewModel() {
 
     private val disposables = CompositeDisposable()
 
-    private val _temperatureInfo = MutableLiveData<Float>()
-    private val _dataLoading = MutableLiveData<Boolean>()
+    private val _viewState = MutableLiveData<DayForecastViewState>()
 
-    val temperatureInfo: LiveData<Float>
-        get() = _temperatureInfo
-
-    val dataLoading: LiveData<Boolean>
-        get() = _dataLoading
+    val viewState: LiveData<DayForecastViewState>
+        get() = _viewState
 
     companion object {
         private const val DEFAULT_CITY = "Kazan"
@@ -31,8 +27,10 @@ class DayForecastMVVMViewModel : ViewModel() {
         disposables.clear()
     }
 
-    fun fetchKazanWeather() {
-        fetchCityWeather(DEFAULT_CITY)
+    fun action(action: DayForecastAction) {
+        when (action) {
+            is DayForecastAction.FetchForecast -> fetchCityWeather(DEFAULT_CITY)
+        }
     }
 
     private fun fetchCityWeather(city: String) {
@@ -43,10 +41,9 @@ class DayForecastMVVMViewModel : ViewModel() {
                 .map(this::fromKelvinToCelsius)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .doOnSubscribe { _dataLoading.value = true }
-                .doFinally { _dataLoading.value = false }
+                .doOnSubscribe { _viewState.value = DayForecastViewState.Loading }
                 .subscribe(
-                        { _temperatureInfo.value = it },
+                        { _viewState.value = DayForecastViewState.Success(it) },
                         {
                             // handle error
                         }

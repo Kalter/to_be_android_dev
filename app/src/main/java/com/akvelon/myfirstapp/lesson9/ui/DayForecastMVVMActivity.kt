@@ -33,18 +33,22 @@ class DayForecastMVVMActivity : AppCompatActivity() {
 
         dayInfoView = findViewById(R.id.tvDayForecast)
         progressBar = findViewById(R.id.progressBar)
-        findViewById<View>(R.id.btnLoadWithRxJava).setOnClickListener { dayForecastViewModel.fetchKazanWeather() }
+        findViewById<View>(R.id.btnLoadWithRxJava)
+                .setOnClickListener { dayForecastViewModel.action(DayForecastAction.FetchForecast) }
 
-        dayForecastViewModel.temperatureInfo.observe(this, Observer {
-            showTemperatureInCelsius(it)
+        dayForecastViewModel.viewState.observe(this, Observer { state ->
+            state?.let { render(it) }
         })
-        dayForecastViewModel.dataLoading.observe(this, Observer {
-            if (it) {
-                showProgressBar()
-            } else {
+    }
+
+    private fun render(state: DayForecastViewState) {
+        when (state) {
+            is DayForecastViewState.Loading -> showProgressBar()
+            is DayForecastViewState.Success -> {
                 hideProgressBar()
+                showTemperatureInCelsius(state.temp)
             }
-        })
+        }
     }
 
     private fun showProgressBar() {
